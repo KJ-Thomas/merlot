@@ -1,0 +1,59 @@
+$color-primary: #1976d2;
+$button-save: #75ca42;
+$button-drop: #f35555;
+$shadow: 0 3px 6px #0000004b;
+$card-title-size: 2.5rem;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+body {
+  font-family: "Noto Sans SC", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.right-layout {
+  width: 85vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+}
+
+.card-title {
+  color: $color-primary;
+  font-size: 2.3rem;
+}
+
+@import "./pages/update.css";
+@import "./pages/prolibrary.css";
+@import "./pages/sublibrary.css";
+@import "./pages/guide.css";
+@import "./pages/guidehistory.css";
+@import "./components/pro-library/proshowcard";
+@import "./components/footer";
+@import "./components/nav";
+@import "./components/pro-library/proinfocard";
+@import "./components/pro-library/proupdatecard";
+@import "./components/topbar";
+@import "./components/tw-library/twtable";
+@import "./components/find-sub/subinfocard";
+@import "./components/find-sub/subupdatecard";
+@import "./components/find-sub/subshowcard";
+@import "./components/guide/guideshowcard";
+@import "./components/guide/guideinfocard";
+@import "./components/guide/guideupdatecard";

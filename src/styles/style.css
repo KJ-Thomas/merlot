@@ -1,0 +1,659 @@
+@import url(c:\Users\20002\Desktop\merlot\src\styles\pages\update.css);
+@import url(c:\Users\20002\Desktop\merlot\src\styles\pages\prolibrary.css);
+@import url(c:\Users\20002\Desktop\merlot\src\styles\pages\sublibrary.css);
+@import url(c:\Users\20002\Desktop\merlot\src\styles\pages\guide.css);
+@import url(c:\Users\20002\Desktop\merlot\src\styles\pages\guidehistory.css);
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Noto Sans SC", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.right-layout {
+  width: 85vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+}
+
+.card-title {
+  color: #1976d2;
+  font-size: 2.3rem;
+}
+
+.pro-show-card {
+  width: 82.3vw;
+  height: 45vh;
+  background-color: #fdfdfd;
+  -webkit-box-shadow: 0 3px 6px #0000004b;
+          box-shadow: 0 3px 6px #0000004b;
+  border-radius: 5px;
+  position: relative;
+}
+
+.pro-show-card .title {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.8rem;
+  color: #1976d2;
+  font-size: 2.5rem;
+}
+
+.pro-show-card table {
+  position: absolute;
+  top: 6rem;
+  left: 1.8rem;
+  width: 96.5%;
+}
+
+.pro-show-card table th {
+  font-size: 1.8rem;
+}
+
+.pro-show-card table td {
+  font-size: 1.5rem;
+}
+
+.pro-show-card .more {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.8rem;
+  color: #1976d2;
+  font-size: 1.5rem;
+}
+
+.pro-show-card a {
+  color: #1976d2;
+}
+
+.footer {
+  width: 82vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  color: #a7a5a5;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.nav-container {
+  width: 15vw;
+  height: 100vh;
+  background-color: #fefefe;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.nav-title {
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 3vw;
+  font-weight: 600;
+}
+
+.nav-item-container {
+  border-top: 1.5px solid #c6c6c69f;
+  border-right: 1.5px solid #c6c6c69f;
+  height: 90%;
+}
+
+.nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 3vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5.3rem;
+  font-size: 1.3vw;
+  font-weight: 400;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.nav-item:first-child {
+  margin-top: 2.6vh;
+}
+
+.nav-item a,
+.nav-item span {
+  margin-left: 0.7vw;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  font-size: 1.5rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.pro-info-card {
+  width: 25.5vw;
+  height: 33vh;
+  background-color: #fdfdfd;
+  -webkit-box-shadow: 0 3px 6px #0000004b;
+          box-shadow: 0 3px 6px #0000004b;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.pro-info-card .title {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.8rem;
+  color: #1976d2;
+  font-size: 2.5rem;
+}
+
+.pro-info-card .count {
+  position: absolute;
+  top: 5.2rem;
+  left: 1.8rem;
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+.pro-info-card .time {
+  position: absolute;
+  top: 13rem;
+  left: 1.8rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #acacac;
+}
+
+.pro-update-card {
+  width: 55vw;
+  height: 33vh;
+  background-color: #fdfdfd;
+  -webkit-box-shadow: 0 3px 6px #0000004b;
+          box-shadow: 0 3px 6px #0000004b;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.pro-update-card .title {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.8rem;
+  color: #1976d2;
+  font-size: 2.5rem;
+}
+
+.pro-update-card .text {
+  position: absolute;
+  top: 6rem;
+  left: 1.8rem;
+  font-size: 2rem;
+  font-weight: 500;
+  width: 52.5vw;
+  font-size: 2.2rem;
+}
+
+.pro-update-card .link {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.8rem;
+  color: #1976d2;
+  font-size: 1.5rem;
+}
+
+.pro-update-card button {
+  width: 7rem;
+  height: 4rem;
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: white;
+  position: absolute;
+  border: none;
+  border-radius: 5px;
+  bottom: 1.5rem;
+}
+
+.pro-update-card .save {
+  right: 11rem;
+  background-color: #75ca42;
+}
+
+.pro-update-card .drop {
+  right: 3rem;
+  background-color: #f35555;
+}
+
+.pro-update-card .save:hover {
+  background-color: #5da930;
+}
+
+.pro-update-card .drop:hover {
+  background-color: #de3636;
+}
+
+.topbar-container {
+  height: 10vh;
+  background-color: #1976d2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 3px 6px #0000004b;
+          box-shadow: 0 3px 6px #0000004b;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.path-text {
+  color: white;
+  font-size: 2.5rem;
+  margin-left: 4rem;
+}
+
+.tw-table {
+  width: 98%;
+  padding-top: 1.5rem;
+  padding-left: 1.75rem;
+}
+
+.tw-table h2 {
+  color: #1976d2;
+  font-size: 2.5rem;
+}
+
+.tw-table th {
+  font-size: 1.8rem;
+}
+
+.tw-table td {
+  font-size: 1.5rem;
+}
+
+.tw-table a {
+  color: #1976d2;
+}
+
+.sub-info-card {
+  width: 25.5vw;
+  height: 33vh;
+  background-color: #fdfdfd;
+  -webkit-box-shadow: 0 3px 6px #0000004b;
+          box-shadow: 0 3px 6px #0000004b;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.sub-info-card .title {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.8rem;
+  color: #1976d2;
+  font-size: 2.5rem;
+}
+
+.sub-info-card .count {
+  position: absolute;
+  top: 5.2rem;
+  left: 1.8rem;
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+.sub-info-card .time {
+  position: absolute;
+  top: 13rem;
+  left: 1.8rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #acacac;
+}
+
+.sub-update-card {
+  width: 55vw;
+  height: 33vh;
+  background-color: #fdfdfd;
+  -webkit-box-shadow: 0 3px 6px #0000004b;
+          box-shadow: 0 3px 6px #0000004b;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.sub-update-card .title {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.8rem;
+  color: #1976d2;
+  font-size: 2.5rem;
+}
+
+.sub-update-card .topic-name {
+  position: absolute;
+  top: 4.5rem;
+  left: 1.8rem;
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+.sub-update-card .keywords {
+  position: absolute;
+  top: 12.8rem;
+  left: 1.8rem;
+  font-weight: 500;
+  width: 52.5vw;
+  font-size: 2.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sub-update-card div {
+  padding-right: 0.9rem;
+}
+
+.sub-update-card .link {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.8rem;
+  color: #1976d2;
+  font-size: 1.5rem;
+}
+
+.sub-update-card button {
+  width: 7rem;
+  height: 4rem;
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: white;
+  position: absolute;
+  border: none;
+  border-radius: 5px;
+  bottom: 1.5rem;
+}
+
+.sub-update-card .save {
+  right: 11rem;
+  background-color: #75ca42;
+}
+
+.sub-update-card .drop {
+  right: 3rem;
+  background-color: #f35555;
+}
+
+.sub-update-card .save:hover {
+  background-color: #5da930;
+}
+
+.sub-update-card .drop:hover {
+  background-color: #de3636;
+}
+
+.sub-show-card {
+  width: 82.3vw;
+  height: 45vh;
+  background-color: #fdfdfd;
+  -webkit-box-shadow: 0 3px 6px #0000004b;
+          box-shadow: 0 3px 6px #0000004b;
+  border-radius: 5px;
+  position: relative;
+}
+
+.sub-show-card .title {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.8rem;
+  color: #1976d2;
+  font-size: 2.5rem;
+}
+
+.sub-show-card table {
+  position: absolute;
+  top: 6rem;
+  left: 1.8rem;
+  width: 96.5%;
+}
+
+.sub-show-card table th {
+  font-size: 1.8rem;
+}
+
+.sub-show-card table td {
+  font-size: 1.5rem;
+}
+
+.sub-show-card .more {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.8rem;
+  color: #1976d2;
+  font-size: 1.5rem;
+}
+
+.sub-show-card a {
+  color: #1976d2;
+}
+
+.sub-show-card span {
+  padding-left: 10px;
+}
+
+.guide-show-card {
+  width: 82.3vw;
+  height: 45vh;
+  background-color: #fdfdfd;
+  -webkit-box-shadow: 0 3px 6px #0000004b;
+          box-shadow: 0 3px 6px #0000004b;
+  border-radius: 5px;
+  position: relative;
+}
+
+.guide-show-card .title {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.8rem;
+  color: #1976d2;
+  font-size: 2.5rem;
+}
+
+.guide-show-card table {
+  position: absolute;
+  top: 6rem;
+  left: 1.8rem;
+  width: 96.5%;
+}
+
+.guide-show-card table th {
+  font-size: 1.8rem;
+}
+
+.guide-show-card table td {
+  font-size: 1.5rem;
+}
+
+.guide-show-card .more {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.8rem;
+  color: #1976d2;
+  font-size: 1.5rem;
+}
+
+.guide-show-card a {
+  color: #1976d2;
+}
+
+.guide-info-card {
+  width: 25.5vw;
+  height: 33vh;
+  background-color: #fdfdfd;
+  -webkit-box-shadow: 0 3px 6px #0000004b;
+          box-shadow: 0 3px 6px #0000004b;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.guide-info-card .title {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.8rem;
+  color: #1976d2;
+  font-size: 2.5rem;
+}
+
+.guide-info-card .count {
+  position: absolute;
+  top: 5.2rem;
+  left: 1.8rem;
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+.guide-info-card .time {
+  position: absolute;
+  top: 13rem;
+  left: 1.8rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #acacac;
+}
+
+.guide-update-card {
+  width: 55vw;
+  height: 33vh;
+  background-color: #fdfdfd;
+  -webkit-box-shadow: 0 3px 6px #0000004b;
+          box-shadow: 0 3px 6px #0000004b;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.guide-update-card .title {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.8rem;
+  color: #1976d2;
+  font-size: 2.5rem;
+}
+
+.guide-update-card .text {
+  position: absolute;
+  top: 6rem;
+  left: 1.8rem;
+  font-size: 2rem;
+  font-weight: 500;
+  width: 52.5vw;
+  font-size: 2.2rem;
+}
+
+.guide-update-card .link {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.8rem;
+  color: #1976d2;
+  font-size: 1.5rem;
+}
+
+.guide-update-card button {
+  width: 7rem;
+  height: 4rem;
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: white;
+  position: absolute;
+  border: none;
+  border-radius: 5px;
+  bottom: 1.5rem;
+}
+
+.guide-update-card .save {
+  right: 11rem;
+  background-color: #75ca42;
+}
+
+.guide-update-card .drop {
+  right: 3rem;
+  background-color: #f35555;
+}
+
+.guide-update-card .save:hover {
+  background-color: #5da930;
+}
+
+.guide-update-card .drop:hover {
+  background-color: #de3636;
+}
+
+.guide-update-card select {
+  width: 10rem;
+  height: 3rem;
+  position: absolute;
+  top: 1.7rem;
+  font-size: 1.3rem;
+}
+
+.guide-update-card .one {
+  left: 16rem;
+}
+
+.guide-update-card .two {
+  left: 27rem;
+}
+/*# sourceMappingURL=style.css.map */

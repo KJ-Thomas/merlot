@@ -1,0 +1,15 @@
+.topbar-container {
+  height: 10vh;
+  background-color: $color-primary;
+  display: flex;
+  align-items: center;
+  box-shadow: $shadow;
+  position: sticky;
+  top: 0;
+}
+
+.path-text {
+  color: white;
+  font-size: 2.5rem;
+  margin-left: 4rem;
+}

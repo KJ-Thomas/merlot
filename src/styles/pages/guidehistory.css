@@ -1,0 +1,27 @@
+.guide-history {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.guide-history--container {
+  margin-top: 1.5rem;
+  height: 90%;
+  width: 98%;
+}
+
+.guide-history th {
+  font-size: 1.8rem;
+}
+
+.guide-history td {
+  font-size: 1.5rem;
+}
+
+.guide-history a {
+  color: #1976d2;
+}
+/*# sourceMappingURL=guidehistory.css.map */

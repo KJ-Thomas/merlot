@@ -1,0 +1,31 @@
+.sub-library {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sub-library--container {
+  margin-top: 1.5rem;
+  height: 90%;
+  width: 98%;
+}
+
+.sub-library th {
+  font-size: 1.8rem;
+}
+
+.sub-library td {
+  font-size: 1.5rem;
+}
+
+.sub-library a {
+  color: #1976d2;
+}
+
+.sub-library span {
+  padding-left: 10px;
+}
+/*# sourceMappingURL=sublibrary.css.map */

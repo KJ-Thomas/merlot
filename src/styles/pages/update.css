@@ -1,0 +1,24 @@
+.update {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.update .update-card {
+  position: absolute;
+  top: 12%;
+  left: 1.5%;
+}
+
+.update .info-card {
+  position: absolute;
+  top: 12%;
+  right: 1.5%;
+}
+
+.update .show-card {
+  position: absolute;
+  bottom: 6%;
+  left: 1.5%;
+}
+/*# sourceMappingURL=update.css.map */

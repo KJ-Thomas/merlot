@@ -1,0 +1,23 @@
+.guide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .update-card {
+    position: absolute;
+    top: 12%;
+    left: 1.5%;
+  }
+
+  .info-card {
+    position: absolute;
+    top: 12%;
+    right: 1.5%;
+  }
+
+  .show-card {
+    position: absolute;
+    bottom: 6%;
+    left: 1.5%;
+  }
+}

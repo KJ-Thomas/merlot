@@ -1,0 +1,77 @@
+.sub-update-card {
+  width: 55vw;
+  height: 33vh;
+  background-color: #fdfdfd;
+  box-shadow: $shadow;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+
+  .title {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.8rem;
+    color: $color-primary;
+    font-size: $card-title-size;
+  }
+
+  .topic-name {
+    position: absolute;
+    top: 4.5rem;
+    left: 1.8rem;
+    font-size: 5rem;
+    font-weight: 500;
+  }
+
+  .keywords {
+    position: absolute;
+    top: 12.8rem;
+    left: 1.8rem;
+    font-weight: 500;
+    width: 52.5vw;
+    font-size: 2.2rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  div {
+    padding-right: 0.9rem;
+  }
+
+  .link {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.8rem;
+    color: $color-primary;
+    font-size: 1.5rem;
+  }
+
+  button {
+    width: 7rem;
+    height: 4rem;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: white;
+    position: absolute;
+    border: none;
+    border-radius: 5px;
+    bottom: 1.5rem;
+  }
+
+  .save {
+    right: 11rem;
+    background-color: $button-save;
+  }
+
+  .drop {
+    right: 3rem;
+    background-color: $button-drop;
+  }
+
+  .save:hover {
+    background-color: darken(#75ca42, 10%);
+  }
+
+  .drop:hover {
+    background-color: darken(#e56262, 10%);
+  }
+}

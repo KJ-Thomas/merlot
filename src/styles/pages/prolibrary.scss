@@ -1,0 +1,22 @@
+.pro-library {
+  display: flex;
+  justify-content: center;
+
+  &--container {
+    margin-top: 1.5rem;
+    height: 90%;
+    width: 98%;
+  }
+
+  th {
+    font-size: 1.8rem;
+  }
+
+  td {
+    font-size: 1.5rem;
+  }
+
+  a {
+    color: #1976d2;
+  }
+}
